@@ -1,7 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     initPageLoader();
+    initActiveNav();
     initHeroCarousel();
 });
+
+function initActiveNav() {
+    const navLinks = Array.from(document.querySelectorAll('.main-nav .nav-link'));
+    if (!navLinks.length) return;
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            const href = link.getAttribute('href');
+
+            if (!href || href === '#') {
+                event.preventDefault();
+            }
+
+            navLinks.forEach((item) => item.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+}
 
 function initPageLoader() {
     const loader = document.querySelector('[data-page-loader]');

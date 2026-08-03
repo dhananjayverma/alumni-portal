@@ -227,6 +227,7 @@ button {
 }
 
 .nav-link {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
@@ -235,6 +236,23 @@ button {
     font-size: clamp(0.78rem, 0.82vw, 0.92rem);
     font-weight: 400;
     white-space: nowrap;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.55rem;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
 }
 
 .nav-item {
@@ -712,6 +730,12 @@ button {
 .footer-inner p {
     color: rgba(255, 255, 255, 0.82);
     font-size: 0.72rem;
+}
+
+@media (max-width: 1440px) {
+    .nav-inner {
+        gap: clamp(1.45rem, 2.6vw, 2.8rem);
+    }
 }
 
 @media (max-width: 1280px) {
