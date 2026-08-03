@@ -1165,7 +1165,7 @@ h3 {
     border-radius: 12px;
     background:
         linear-gradient(90deg, rgba(255, 241, 243, 0.98) 0%, rgba(255, 235, 238, 0.9) 46%, rgba(255, 230, 234, 0.74) 100%),
-        url("../assets/IMG_0393.JPG") center / cover;
+        url("../assets/optimized/IMG_0393.jpg") center / cover;
     box-shadow: 0 14px 34px rgba(199, 26, 34, 0.08);
 }
 

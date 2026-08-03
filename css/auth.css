@@ -321,7 +321,7 @@ button {
     color: #fff;
     background:
         linear-gradient(180deg, rgba(22, 24, 27, 0.1), rgba(156, 3, 13, 0.86)),
-        url("../assets/IMG_0393.JPG") center / cover;
+        url("../assets/optimized/IMG_0393.jpg") center / cover;
 }
 
 .auth-logo {
