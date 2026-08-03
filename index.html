@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="brand">
+                <img src="lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="auth.html" class="btn btn-primary btn-small">
+                <i class="ph-fill ph-user-plus"></i>
+                Sign Up / Login
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-link active">Home</a>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">About <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Vision &amp; Mission</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Department Team</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">CUAA <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">About CUAA</a>
+                    <a href="#">Governing Body Of CUAA</a>
+                    <a href="#">Become A CUAA Member</a>
+                    <a href="#">Digital Card For CUAA Member</a>
+                    <a href="#">Create Alumni Post</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Directory <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown nav-dropdown-long">
+                    <a href="#">Yearbook</a>
+                    <a href="#">Alumni Directory</a>
+                    <a href="#">Invite Batchmates</a>
+                    <a href="#">Repository Memory Lane</a>
+                    <a href="#">Alumni Chapters</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Groups</a>
+                    <a href="#">Alumni Success Stories</a>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Services <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Document Request</a>
+                    <a href="#">Letter Of Recommendation</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Insurance</a>
+                    <a href="#">NOC</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">More <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Alumni Digital Card</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Announcements from CU <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown nav-dropdown-wide">
+                    <a href="#">Job Opportunity For CU Alumni - AU Small Finance Bank</a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">Noticeboard</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow"><i class="ph-fill ph-users-three"></i> Stronger Together, <strong>Forever Connected</strong></span>
+                    <h1><span class="nowrap">A Global Community</span> <br> of <span class="highlight">Changemakers</span></h1>
+                    <p>Stay connected, inspire others and create impact with the Chandigarh University Alumni Network.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">Explore Alumni Directory <i class="ph-fill ph-caret-circle-right"></i></a>
+                        <a href="#" class="btn btn-outline">Upcoming Events <i class="ph ph-calendar-blank"></i></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <i class="ph-fill ph-users-three"></i>
+                            <strong>25K+</strong>
+                            <span>Alumni Network</span>
+                        </div>
+                        <div>
+                            <i class="ph-fill ph-globe-hemisphere-west"></i>
+                            <strong>100+</strong>
+                            <span>Countries</span>
+                        </div>
+                        <div>
+                            <i class="ph-fill ph-calendar-check"></i>
+                            <strong>500+</strong>
+                            <span>Events Every Year</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <button class="round-control prev-btn" aria-label="Previous slide">
+                        <i class="ph-bold ph-caret-left"></i>
+                    </button>
+                    <button class="round-control next-btn" aria-label="Next slide">
+                        <i class="ph-bold ph-caret-right"></i>
+                    </button>
+                    <div class="hero-card hero-card-left">
+                        <img src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_1_1785698224068.png" alt="CU Alumni Professional">
+                    </div>
+                    <div class="hero-card hero-card-main">
+                        <img class="hero-img" src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_2_1785698238837.png" alt="CU Alumni Graduate">
+                    </div>
+                    <div class="hero-card hero-card-right">
+                        <img src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_3_1785698252288.png" alt="CU Alumni Meet">
+                    </div>
+                    <div class="hero-card hero-card-far">
+                        <img src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_4_1785698266400.png" alt="CU Alumni Speaker">
+                    </div>
+                    <div class="hero-card hero-card-hidden">
+                        <img src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_5_1785698279944.png" alt="CU Alumni Campus">
+                    </div>
+                    <div class="hero-card hero-card-hidden">
+                        <img src="file:///Users/laptopbazaar/.gemini/antigravity-ide/brain/2e0bd6a6-3d41-4fb3-a09e-d136689edca2/cu_alumni_6_1785698292206.png" alt="CU Alumni Award">
+                    </div>
+                    <div class="hero-dots" aria-label="Hero carousel pagination">
+                        <button class="dot active" aria-label="Slide 1"></button>
+                        <button class="dot" aria-label="Slide 2"></button>
+                        <button class="dot" aria-label="Slide 3"></button>
+                        <button class="dot" aria-label="Slide 4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access-section">
+            <div class="quick-access-heading">
+                <span>Quick Access</span>
+                <h2>Explore What Matters</h2>
+                <p>Access important resources, stay connected and make an impact.</p>
+            </div>
+
+            <div class="container feature-strip">
+                <a href="#" class="feature-card">
+                    <i class="ph ph-identification-card"></i>
+                    <strong>Alumni Directory</strong>
+                    <span>Find & connect with fellow alumni across the globe.</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#" class="feature-card">
+                    <i class="ph ph-briefcase"></i>
+                    <strong>Career Resources</strong>
+                    <span>Explore job openings, career tools & professional growth opportunities.</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#" class="feature-card">
+                    <i class="ph ph-calendar-blank"></i>
+                    <strong>Events & Reunions</strong>
+                    <span>Stay updated with upcoming events, reunions and networking opportunities.</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#" class="feature-card">
+                    <i class="ph ph-newspaper"></i>
+                    <strong>News & Updates</strong>
+                    <span>Read the latest news, campus stories and important announcements.</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#" class="feature-card">
+                    <i class="ph ph-hand-heart"></i>
+                    <strong>Give Back</strong>
+                    <span>Support current students, contribute to initiatives and make a difference.</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="container split-section">
+            <article class="spotlight-card">
+                <button class="round-control spotlight-prev" aria-label="Previous slide">
+                    <i class="ph-bold ph-caret-left"></i>
+                </button>
+                <button class="round-control spotlight-next" aria-label="Next slide">
+                    <i class="ph-bold ph-caret-right"></i>
+                </button>
+                <div class="section-head inverse">
+                    <h2>Alumni Spotlight</h2>
+                    <a href="#">View All</a>
+                </div>
+                <div class="spotlight-body">
+                    <img src="assets/DSC_4154.JPG" alt="Alumni spotlight">
+                    <div>
+                        <h3>Suddhaswattwa Chaudhuri</h3>
+                        <p>Co-Founder, Escape Terra<br><i class="ph-fill ph-map-pin"></i> Kolkata, West Bengal</p>
+                    </div>
+                </div>
+                <blockquote>
+                    <i class="ph-fill ph-quotes" style="font-size: 1.5rem; opacity: 0.5; margin-right: 0.5rem; vertical-align: top;"></i>
+                    From CU to building a space research startup, the journey has been incredible. CU gave me the foundation to dream big and the support to achieve bigger.
+                    <i class="ph-fill ph-quotes" style="font-size: 1.5rem; opacity: 0.5; margin-left: 0.5rem; vertical-align: bottom; transform: rotate(180deg); display: inline-block;"></i>
+                </blockquote>
+                
+                <div class="spotlight-stats">
+                    <div class="stat-item">
+                        <i class="ph-fill ph-users"></i>
+                        <div class="stat-info">
+                            <strong>10+</strong>
+                            <span>Years of<br>Experience</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph-fill ph-rocket"></i>
+                        <div class="stat-info">
+                            <strong>2</strong>
+                            <span>Startups<br>Founded</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph-fill ph-trophy"></i>
+                        <div class="stat-info">
+                            <strong>20+</strong>
+                            <span>Awards<br>Received</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph-fill ph-graduation-cap"></i>
+                        <div class="stat-info">
+                            <strong>500+</strong>
+                            <span>Students<br>Mentored</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mini-dots">
+                    <span class="active"></span><span></span><span></span><span></span><span></span>
+                </div>
+            </article>
+
+            <section class="testimonial-area">
+                <div class="section-head">
+                    <h2>What Alumni Say</h2>
+                    <a href="#">View All</a>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <img src="assets/DSC_4133.JPG" alt="Alumni testimonial">
+                        <h3>Nilesh Sinha</h3>
+                        <p class="role">Director HR, BonV Aero</p>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p>CU alumni are making a real difference across industries. Proud to be a part of this amazing network.</p>
+                        <div class="quote-mark"><i class="ph-fill ph-quotes"></i></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <img src="assets/DSC_4151.JPG" alt="Alumni testimonial">
+                        <h3>Praveen Sharma</h3>
+                        <p class="role">UPSC Rank 45 (AIR)</p>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p>CU shaped my personality and gave me the confidence to chase and achieve my goals.</p>
+                        <div class="quote-mark"><i class="ph-fill ph-quotes"></i></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <img src="assets/IMG_0176.JPG" alt="Alumni testimonial">
+                        <h3>Mehak Bansal</h3>
+                        <p class="role">Product Manager, Microsoft</p>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p>The learnings, mentorship and exposure I got at CU helped me grow and stand where I am today.</p>
+                        <div class="quote-mark"><i class="ph-fill ph-quotes"></i></div>
+                    </article>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="active"></span><span></span><span></span><span></span>
+                </div>
+                <button class="round-control testimonial-next" aria-label="Next slide">
+                    <i class="ph-bold ph-caret-right"></i>
+                </button>
+            </section>
+        </section>
+
+        <section class="container yearbook">
+            <div class="yearbook-copy">
+                <span class="yearbook-badge"><i class="ph-fill ph-star"></i> Stronger Alumni. Stronger CU.</span>
+                <h2>Alumni Handbook, <span>Legacy Continues</span></h2>
+                <p>Explore stories, achievements and initiatives from our global alumni community.</p>
+                <a href="#" class="btn btn-primary btn-small"><i class="ph ph-book-open"></i> View Handbook <i class="ph-bold ph-arrow-right"></i></a>
+            </div>
+            <div class="avatar-row">
+                <img src="assets/IMG_0001.JPG" alt="">
+                <img src="assets/IMG_0004.JPG" alt="">
+                <img src="assets/IMG_0006.JPG" alt="">
+                <img src="assets/IMG_0176.JPG" alt="">
+                <img src="assets/DSC_4136.JPG" alt="">
+                <span>+1200<br>More Alumni</span>
+            </div>
+        </section>
+
+        <section class="container two-col">
+            <article class="list-card">
+                <div class="section-head">
+                    <div class="section-title">
+                        <span class="section-icon"><i class="ph-fill ph-images"></i></span>
+                        <div>
+                            <h2>Memory Lane</h2>
+                            <p>Relive the moments that made us proud.</p>
+                        </div>
+                    </div>
+                    <a href="#">View All <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+                <a href="#" class="news-row">
+                    <img src="assets/DSC_4134.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Event</em>
+                        <strong>Alumni Expert Talk (Industrial Design) - 29/07/2026</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 29, 2026</small>
+                        <p>An insightful session by our alumni expert on the future of industrial design and innovation.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <a href="#" class="news-row">
+                    <img src="assets/DSC_4154.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Career</em>
+                        <strong>From Alumni to Recruiters</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 07, 2026</small>
+                        <p>Alumni interacting with students and sharing valuable career insights and opportunities.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <a href="#" class="news-row">
+                    <img src="assets/DSC_4181.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Academic</em>
+                        <strong>CU Scholar Summit</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 04, 2026</small>
+                        <p>Celebrating research, innovation and academic excellence across the campus.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <div class="card-dots" aria-hidden="true">
+                    <span class="active"></span><span></span><span></span>
+                </div>
+            </article>
+
+            <article class="list-card">
+                <div class="section-head">
+                    <div class="section-title">
+                        <span class="section-icon"><i class="ph-fill ph-calendar-heart"></i></span>
+                        <div>
+                            <h2>Happening at CU</h2>
+                            <p>Stay updated with the latest from campus.</p>
+                        </div>
+                    </div>
+                    <a href="#">View All <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+                <a href="#" class="news-row">
+                    <img src="assets/IMG_0289.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Milestone</em>
+                        <strong>Another milestone. Another success story.</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 30, 2026</small>
+                        <p>A proud moment for CU as we achieve new heights together.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <a href="#" class="news-row">
+                    <img src="assets/IMG_0393.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Event</em>
+                        <strong>ALUMNI RECONNECT EVENT</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 30, 2026</small>
+                        <p>Reconnect, reminisce and rekindle the spirit of Chandigarh University.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <a href="#" class="news-row">
+                    <img src="assets/IMG_0400.JPG" alt="">
+                    <div class="news-copy">
+                        <em>Achievement</em>
+                        <strong>Excellence Built Across Every Discipline</strong>
+                        <small><i class="ph ph-calendar-blank"></i> Jul 28, 2026</small>
+                        <p>Recognizing the outstanding achievements of our alumni across diverse fields.</p>
+                    </div>
+                    <span class="news-arrow" aria-hidden="true"><i class="ph-bold ph-caret-right"></i></span>
+                </a>
+                <div class="card-dots" aria-hidden="true">
+                    <span></span><span class="active"></span><span></span><span></span><span></span>
+                </div>
+            </article>
+        </section>
+
+        <section class="container social-section">
+            <div class="social-heading">
+                <span>Stay Connected</span>
+                <h2 class="center-title">Stay Connected With CUAA</h2>
+                <p>Follow us on our social media channels and be a part of our vibrant alumni community.</p>
+            </div>
+            <div class="social-grid">
+                <article class="social-card facebook-card">
+                    <h3><i class="ph-fill ph-facebook-logo"></i> CUAA on Facebook</h3>
+                    <div class="profile-line">
+                        <img src="lopgoooooo.png" alt="">
+                        <span><strong>Chandigarh University <i class="ph-fill ph-seal-check"></i></strong><small>577 million followers</small></span>
+                    </div>
+                    <div class="social-photo-wrap">
+                        <img class="social-photo" src="assets/IMG_0393.JPG" alt="Facebook update">
+                    </div>
+                    <p>Double Glory for India & Chandigarh University!</p>
+                    <div class="social-stats" aria-label="Facebook engagement">
+                        <span><i class="ph-fill ph-thumbs-up"></i> 12K</span>
+                        <span><i class="ph-fill ph-heart"></i> 7.5K</span>
+                        <span><i class="ph ph-chat-circle"></i> 1.3K</span>
+                        <span><i class="ph ph-share-fat"></i> 2.1K</span>
+                    </div>
+                    <a href="#" class="social-visit facebook-visit">Visit Facebook Page <i class="ph-bold ph-caret-right"></i></a>
+                </article>
+                <article class="social-card instagram-card">
+                    <h3><i class="ph-fill ph-instagram-logo"></i> CUAA on Instagram</h3>
+                    <div class="profile-line">
+                        <img src="lopgoooooo.png" alt="">
+                        <span><strong>chandigarh university <i class="ph-fill ph-seal-check"></i></strong><small>222K followers <b>&bull;</b> 8,520 posts</small></span>
+                    </div>
+                    <div class="insta-grid-wrap">
+                        <div class="insta-grid">
+                            <img src="assets/DSC_4133.JPG" alt="">
+                            <img src="assets/DSC_4134.JPG" alt="">
+                            <img src="assets/DSC_4136.JPG" alt="">
+                            <img src="assets/DSC_4151.JPG" alt="">
+                            <img src="assets/DSC_4154.JPG" alt="">
+                            <img src="assets/DSC_4181.JPG" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="social-visit instagram-visit">View Instagram Profile <i class="ph-bold ph-caret-right"></i></a>
+                </article>
+                <article class="social-card linkedin-card">
+                    <h3><i class="ph-fill ph-linkedin-logo"></i> CUAA on LinkedIn</h3>
+                    <div class="linkedin-logo">in</div>
+                    <p>Follow us on LinkedIn for updates, insights and professional networking.</p>
+                    <div class="linkedin-features">
+                        <div>
+                            <i class="ph ph-users-three"></i>
+                            <span><strong>Connect with 25K+ Alumni</strong><small>Expand your professional network</small></span>
+                        </div>
+                        <div>
+                            <i class="ph ph-newspaper"></i>
+                            <span><strong>Latest Updates</strong><small>Get updates on events & achievements</small></span>
+                        </div>
+                        <div>
+                            <i class="ph ph-briefcase"></i>
+                            <span><strong>Career Opportunities</strong><small>Explore job openings and career growth</small></span>
+                        </div>
+                    </div>
+                    <a href="#" class="social-visit linkedin-visit">Visit LinkedIn Page <i class="ph-bold ph-caret-right"></i></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="container gallery-section">
+            <div class="gallery-heading">
+                <span>Gallery</span>
+                <h2>Moments That Matter</h2>
+                <p>Relive the experiences, celebrations and achievements that bring our alumni community together.</p>
+                <a href="#">View All Gallery <i class="ph-bold ph-arrow-right"></i></a>
+            </div>
+            <button class="round-control gallery-prev" aria-label="Previous gallery item">
+                <i class="ph-bold ph-caret-left"></i>
+            </button>
+            <button class="round-control gallery-next" aria-label="Next gallery item">
+                <i class="ph-bold ph-caret-right"></i>
+            </button>
+            <div class="gallery-grid">
+                <article class="gallery-card">
+                    <div class="gallery-photo">
+                        <img src="assets/IMG_0393.JPG" alt="Alumni Expert Talk">
+                        <time datetime="2026-07-29"><strong>29</strong><span>Jul<br>2026</span></time>
+                    </div>
+                    <div class="gallery-copy">
+                        <em>Expert Talk</em>
+                        <h3>Alumni Expert Talk (Industrial Design)</h3>
+                        <div class="gallery-meta">
+                            <span><i class="ph ph-calendar-blank"></i> Jul 29, 2026</span>
+                            <span><i class="ph ph-images"></i> 32 Photos</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <div class="gallery-photo">
+                        <img src="assets/IMG_0289.JPG" alt="Campus Reconnect">
+                        <time datetime="2026-07-25"><strong>25</strong><span>Jul<br>2026</span></time>
+                    </div>
+                    <div class="gallery-copy">
+                        <em>Campus Event</em>
+                        <h3>Campus Reconnect, UID Department</h3>
+                        <div class="gallery-meta">
+                            <span><i class="ph ph-calendar-blank"></i> Jul 25, 2026</span>
+                            <span><i class="ph ph-images"></i> 28 Photos</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <div class="gallery-photo">
+                        <img src="assets/IMG_0401.JPG" alt="DAC readiness meeting">
+                        <time datetime="2026-07-21"><strong>21</strong><span>Jul<br>2026</span></time>
+                    </div>
+                    <div class="gallery-copy">
+                        <em>Meeting</em>
+                        <h3>DAC Readiness Meeting & Felicitation</h3>
+                        <div class="gallery-meta">
+                            <span><i class="ph ph-calendar-blank"></i> Jul 21, 2026</span>
+                            <span><i class="ph ph-images"></i> 24 Photos</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <div class="gallery-photo">
+                        <img src="assets/IMG_0004.JPG" alt="Alumni Meet Delhi">
+                        <time datetime="2026-07-18"><strong>18</strong><span>Jul<br>2026</span></time>
+                    </div>
+                    <div class="gallery-copy">
+                        <em>Alumni Meet</em>
+                        <h3>Alumni Meet - Delhi Chapter</h3>
+                        <div class="gallery-meta">
+                            <span><i class="ph ph-calendar-blank"></i> Jul 18, 2026</span>
+                            <span><i class="ph ph-images"></i> 30 Photos</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="gallery-dots" aria-hidden="true">
+                <span class="active"></span><span></span><span></span><span></span>
+            </div>
+        </section>
+
+        <section class="container question-band">
+            <div class="question-icon">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+                <i class="ph-fill ph-question"></i>
+            </div>
+            <div>
+                <h2>Got Questions?</h2>
+                <p>We're here to help! Reach out to us for any assistance or queries you may have.</p>
+            </div>
+            <a href="#" class="btn question-btn">Contact Us</a>
+        </section>
+
+        <section class="container contact-section">
+            <form class="contact-card">
+                <h2>Reach Out</h2>
+                <div class="form-grid">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="tel" placeholder="Your Phone">
+                    <input type="email" placeholder="Your Email *">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message *"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-small">Submit</button>
+                    <button type="reset" class="btn btn-muted btn-small">Cancel</button>
+                </div>
+            </form>
+            <article class="contact-card">
+                <h2>Contact Info</h2>
+                <p>Chandigarh University Alumni Association<br>Chandigarh University, NH-05, Ludhiana - Chandigarh State Hwy, Punjab 140413</p>
+                <p><i class="ph-fill ph-phone"></i> +91-7087110584</p>
+                <p><i class="ph-fill ph-envelope-simple"></i> alumni@cuchd.in</p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-x-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

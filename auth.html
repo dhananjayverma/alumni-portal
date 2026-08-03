@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="auth.html" class="btn btn-primary btn-small">
+                <i class="ph-fill ph-user-plus"></i>
+                Sign Up / Login
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">About <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Vision &amp; Mission</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Department Team</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">CUAA <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">About CUAA</a>
+                    <a href="#">Governing Body Of CUAA</a>
+                    <a href="#">Become A CUAA Member</a>
+                    <a href="#">Digital Card For CUAA Member</a>
+                    <a href="#">Create Alumni Post</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Directory <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown nav-dropdown-long">
+                    <a href="#">Yearbook</a>
+                    <a href="#">Alumni Directory</a>
+                    <a href="#">Invite Batchmates</a>
+                    <a href="#">Repository Memory Lane</a>
+                    <a href="#">Alumni Chapters</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Groups</a>
+                    <a href="#">Alumni Success Stories</a>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Services <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Document Request</a>
+                    <a href="#">Letter Of Recommendation</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Insurance</a>
+                    <a href="#">NOC</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">More <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown">
+                    <a href="#">Alumni Digital Card</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="nav-link">Announcements from CU <i class="ph ph-caret-down"></i></a>
+                <div class="nav-dropdown nav-dropdown-wide">
+                    <a href="#">Job Opportunity For CU Alumni - AU Small Finance Bank</a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">Noticeboard</a>
+        </div>
+    </nav>
+
+    <main class="auth-page">
+        <section class="auth-shell">
+            <div class="auth-media">
+                <a class="auth-logo" href="index.html">
+                    <img src="lopgoooooo.png" alt="CU Alumni Association">
+                </a>
+                <div class="media-copy">
+                    <span><i class="ph-fill ph-users-three"></i> Alumni Portal</span>
+                    <h1>Welcome to your CU alumni network.</h1>
+                    <p>Connect with fellow alumni, discover events, explore opportunities and stay close to Chandigarh University.</p>
+                </div>
+            </div>
+
+            <div class="auth-card">
+                <div class="card-head access-head">
+                    <span>Account Access</span>
+                    <h2>Choose any one of the following to Signup/Login</h2>
+                </div>
+
+                <div class="access-options">
+                    <button class="access-btn facebook-access" type="button" data-provider="Facebook">
+                        <i class="ph-fill ph-facebook-logo"></i>
+                        Connect with Facebook
+                    </button>
+                    <button class="access-btn google-access" type="button" data-provider="Google">
+                        <i class="ph-bold ph-google-logo"></i>
+                        Connect with Google
+                    </button>
+                    <button class="access-btn linkedin-access" type="button" data-provider="LinkedIn">
+                        <i class="ph-fill ph-linkedin-logo"></i>
+                        Connect with LinkedIn
+                    </button>
+                </div>
+
+                <div class="or-divider" aria-hidden="true">
+                    <span>OR</span>
+                </div>
+
+                <form class="email-access-form" data-email-form>
+                    <label for="accessEmail">Enter your Email</label>
+                    <div class="email-line">
+                        <input id="accessEmail" type="email" name="email" placeholder="Enter your Email..." autocomplete="email" required>
+                        <button type="submit" aria-label="Continue with email">
+                            <i class="ph-bold ph-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <p class="form-message" data-message>These login options are dummy for now.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
