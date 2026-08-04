@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Details | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="role-route">
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header role-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="../auth.html" class="btn btn-primary btn-small" data-auth-entry>
+                <i class="ph-fill ph-user-plus"></i>
+                Login Portal
+            </a>
+        </div>
+    </header>
+
+    <section class="campus-ribbon role-details-ribbon" aria-hidden="true"></section>
+
+    <main class="role-page">
+        <section class="role-card" aria-labelledby="role-title">
+            <div class="role-icon" aria-hidden="true">
+                <i class="ph-fill ph-bank"></i>
+            </div>
+
+            <div class="role-head">
+                <h1 id="role-title">Add your role details</h1>
+                <p>Tell us about your role at Chandigarh University</p>
+                <span aria-hidden="true"></span>
+            </div>
+
+            <form class="role-form" data-role-form>
+                <label for="instituteSelect">Institute *</label>
+                <div class="select-field">
+                    <select id="instituteSelect" name="instituteSelect" aria-label="Select your institute" data-role-select>
+                        <option value="">Select your institute</option>
+                        <option value="Chandigarh University">Chandigarh University</option>
+                        <option value="University Institute of Engineering">University Institute of Engineering</option>
+                        <option value="University School of Business">University School of Business</option>
+                        <option value="University Institute of Computing">University Institute of Computing</option>
+                        <option value="University Institute of Design">University Institute of Design</option>
+                    </select>
+                    <i class="ph-bold ph-caret-down" aria-hidden="true"></i>
+                </div>
+
+                <div class="role-divider" aria-hidden="true">
+                    <span>OR</span>
+                </div>
+
+                <label for="institute">Enter your institute name *</label>
+                <input id="institute" type="text" name="institute" placeholder="Type institute name" autocomplete="organization">
+
+                <aside class="role-note">
+                    <span aria-hidden="true"><i class="ph-fill ph-shield-check"></i></span>
+                    <div>
+                        <strong>Why we need this?</strong>
+                        <p>This helps us personalize your experience and connect you with the right network and resources.</p>
+                    </div>
+                </aside>
+
+                <button class="role-next" type="submit">
+                    Next
+                    <i class="ph-bold ph-arrow-right" aria-hidden="true"></i>
+                </button>
+                <p class="form-message role-message" data-message></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

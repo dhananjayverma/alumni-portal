@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Alumni Network | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="role-route">
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header role-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="../auth.html" class="btn btn-primary btn-small" data-auth-entry>
+                <i class="ph-fill ph-user-plus"></i>
+                Login Portal
+            </a>
+        </div>
+    </header>
+
+    <main class="role-access-page">
+        <section class="campus-ribbon" aria-hidden="true"></section>
+
+        <section class="final-role-card" aria-labelledby="final-role-title">
+            <div class="final-role-head">
+                <span class="role-icon compact" aria-hidden="true">
+                    <i class="ph-fill ph-bank"></i>
+                </span>
+                <div>
+                    <h1 id="final-role-title">Add your role details in - Chandigarh University</h1>
+                    <p data-selected-institute>UNIVERSITY INSTITUTE OF ENGINEERING (UIE)</p>
+                    <small>Fields marked <b>*</b> are mandatory</small>
+                </div>
+            </div>
+
+            <form class="role-final-form" data-final-role-form>
+                <div class="agreement-panel" data-agreement-panel>
+                    <div class="role-choice-field">
+                        <label for="roleSelect">Role *</label>
+                        <div class="select-field final-select">
+                            <select id="roleSelect" name="role" aria-label="Select Role" data-final-role-select>
+                                <option value="">Select Role</option>
+                                <option value="Current Student">Current Student</option>
+                                <option value="Alumni (Past Student)">Alumni (Past Student)</option>
+                                <option value="Staff / Faculty">Staff / Faculty</option>
+                            </select>
+                            <i class="ph-bold ph-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="alumni-fields" data-alumni-fields>
+                        <label class="alumni-field" for="programName">
+                            <span>Program Name *</span>
+                            <input id="programName" type="text" name="programName" placeholder="Program Name">
+                        </label>
+
+                        <label class="alumni-field" for="joiningYear">
+                            <span>Year of Joining*</span>
+                            <select id="joiningYear" name="joiningYear" data-year-select>
+                                <option value="">Select Year of Joining</option>
+                            </select>
+                        </label>
+
+                        <label class="alumni-field" for="graduationYear">
+                            <span>Year of Graduation*</span>
+                            <select id="graduationYear" name="graduationYear" data-year-select>
+                                <option value="">Select Year of Graduation</option>
+                            </select>
+                        </label>
+
+                        <label class="alumni-field" for="uid">
+                            <span>UID *</span>
+                            <input id="uid" type="text" name="uid" placeholder="Fill Your UID">
+                        </label>
+                    </div>
+
+                    <div class="staff-fields" data-staff-fields>
+                        <label class="alumni-field" for="staffJoiningYear">
+                            <span>Year of Joining*</span>
+                            <select id="staffJoiningYear" name="staffJoiningYear" data-year-select>
+                                <option value="">Select Year of Joining</option>
+                            </select>
+                        </label>
+
+                        <label class="alumni-field" for="staffGraduationYear">
+                            <span>Year of Graduation*</span>
+                            <select id="staffGraduationYear" name="staffGraduationYear" data-year-select>
+                                <option value="">Select Year of Graduation</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="agreement-row" for="privacyConsent">
+                        <input id="privacyConsent" type="checkbox" name="privacyConsent">
+                        <span>I have read and agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a>.</span>
+                    </label>
+
+                    <label class="agreement-row" for="consentForm">
+                        <input id="consentForm" type="checkbox" name="consentForm">
+                        <span>I confirm that I have read and understood the <a href="#">Consent Form</a>.</span>
+                    </label>
+                </div>
+
+                <div class="join-row">
+                    <p class="form-message role-message" data-message></p>
+                    <button class="join-btn" type="submit">
+                        Join Alumni Network
+                        <i class="ph-bold ph-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

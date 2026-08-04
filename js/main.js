@@ -1,8 +1,106 @@
 document.addEventListener('DOMContentLoaded', () => {
     initPageLoader();
     initActiveNav();
+    initProfileEntry();
     initHeroCarousel();
 });
+
+function initProfileEntry() {
+    const entry = document.querySelector('[data-auth-entry]');
+    if (!entry) return;
+
+    const email = sessionStorage.getItem('cuAuthEmail');
+    const provider = sessionStorage.getItem('cuAuthProvider');
+    const profileName = sessionStorage.getItem('cuProfileName') || getProfileName(email, provider);
+
+    if (!email && !provider) return;
+
+    const initial = profileName.trim().charAt(0).toUpperCase() || 'U';
+    entry.outerHTML = `
+        <div class="profile-menu" data-profile-menu>
+            <button class="profile-entry" type="button" data-profile-trigger aria-label="Open profile menu" aria-haspopup="true" aria-expanded="false">
+                <span class="profile-avatar">${escapeHtml(initial)}</span>
+            </button>
+            <div class="profile-dropdown" data-profile-dropdown>
+                <div class="profile-dropdown-head">
+                    <span class="profile-avatar">${escapeHtml(initial)}</span>
+                    <div>
+                        <strong>${escapeHtml(profileName)}</strong>
+                        <small>${escapeHtml(email || provider || 'Alumni Profile')}</small>
+                    </div>
+                </div>
+                <a href="${pageHref('dashboard.html')}"><i class="ph-fill ph-house"></i> Dashboard</a>
+                <a href="${pageHref('profile.html')}"><i class="ph-fill ph-user"></i> My Profile</a>
+                <a href="${pageHref('role-details.html')}"><i class="ph-fill ph-bank"></i> Role Details</a>
+                <button type="button" data-profile-logout><i class="ph-bold ph-sign-out"></i> Logout</button>
+            </div>
+        </div>
+    `;
+
+    const menu = document.querySelector('[data-profile-menu]');
+    const trigger = menu?.querySelector('[data-profile-trigger]');
+
+    trigger?.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = menu.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', () => closeProfileMenu(menu, trigger));
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeProfileMenu(menu, trigger);
+        }
+    });
+
+    menu?.querySelector('[data-profile-logout]')?.addEventListener('click', () => {
+        clearProfileSession();
+        window.location.href = rootHref('auth.html');
+    });
+}
+
+function closeProfileMenu(menu, trigger) {
+    menu?.classList.remove('is-open');
+    trigger?.setAttribute('aria-expanded', 'false');
+}
+
+function clearProfileSession() {
+    sessionStorage.removeItem('cuAuthEmail');
+    sessionStorage.removeItem('cuAuthProvider');
+    sessionStorage.removeItem('cuProfileName');
+    sessionStorage.removeItem('cuInstitute');
+}
+
+function pageHref(file) {
+    return isPagesRoute() ? file : `pages/${file}`;
+}
+
+function rootHref(file) {
+    return isPagesRoute() ? `../${file}` : file;
+}
+
+function isPagesRoute() {
+    return window.location.pathname.includes('/pages/');
+}
+
+function getProfileName(email, provider) {
+    if (email) {
+        const name = email.split('@')[0].replace(/[._-]+/g, ' ').trim();
+        return name ? name.replace(/\b\w/g, (letter) => letter.toUpperCase()) : 'My Profile';
+    }
+
+    return provider ? `${provider} User` : 'My Profile';
+}
+
+function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (character) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;',
+    }[character]));
+}
 
 function initActiveNav() {
     const navLinks = Array.from(document.querySelectorAll('.main-nav .nav-link'));

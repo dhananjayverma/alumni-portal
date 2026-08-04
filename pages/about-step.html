@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About You | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="role-route">
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header role-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="../auth.html" class="btn btn-primary btn-small" data-auth-entry>
+                <i class="ph-fill ph-user-plus"></i>
+                Login Portal
+            </a>
+        </div>
+    </header>
+
+    <main class="about-step-page">
+        <section class="about-step-card" aria-labelledby="about-step-title">
+            <div class="about-step-head">
+                <h1 id="about-step-title">Let us know a bit more about you <span>Step 1 of 3</span></h1>
+                <p>Fields marked <b>*</b> are mandatory</p>
+            </div>
+
+            <form class="about-step-form" data-about-step-form>
+                <fieldset>
+                    <legend>What are you doing currently? <b>*</b></legend>
+
+                    <label class="radio-row">
+                        <input type="radio" name="currentStatus" value="Working as a professional">
+                        <span>Working as a professional</span>
+                    </label>
+
+                    <label class="radio-row">
+                        <input type="radio" name="currentStatus" value="Pursuing higher studies">
+                        <span>Pursuing higher studies</span>
+                    </label>
+
+                    <label class="radio-row">
+                        <input type="radio" name="currentStatus" value="Other">
+                        <span>Other</span>
+                    </label>
+                </fieldset>
+
+                <div class="about-step-actions">
+                    <p class="form-message role-message" data-message></p>
+                    <button type="submit">Next step</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

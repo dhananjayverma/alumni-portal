@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="role-route">
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="site-header role-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            </a>
+            <div class="portal-mark">
+                Alumni <span>Portal</span>
+            </div>
+            <a href="../auth.html" class="btn btn-primary btn-small" data-auth-entry>
+                <i class="ph-fill ph-user-plus"></i>
+                Login Portal
+            </a>
+        </div>
+    </header>
+
+    <main class="profile-dashboard" data-profile-page>
+        <div class="profile-dashboard-grid">
+            <aside class="profile-sidebar">
+                <section class="profile-panel profile-identity">
+                    <div class="identity-avatar-wrap">
+                        <span class="identity-avatar" data-profile-photo>K</span>
+                        <button type="button" aria-label="Change profile photo" data-profile-modal-open="photo">
+                            <i class="ph-bold ph-camera"></i>
+                        </button>
+                    </div>
+                    <h1 data-profile-name>My Profile</h1>
+                    <p>Class of <span data-profile-class>2022</span></p>
+                    <p data-profile-program>Master of Engineering - Civil Engineering</p>
+                    <p data-profile-institute>UNIVERSITY INSTITUTE OF ENGINEERING (UIE)</p>
+                    <strong><i class="ph-fill ph-warning"></i> Unauthenticated User</strong>
+                </section>
+
+                <section class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-user"></i> Contact Information</h2>
+                        <a href="#" data-profile-modal-open="contact">Edit</a>
+                    </div>
+                    <div class="profile-info-list">
+                        <p><i class="ph-fill ph-envelope-simple"></i> <span data-profile-email>Not added</span></p>
+                        <p><i class="ph-fill ph-phone"></i> <span data-profile-phone>+91 98765 43210</span></p>
+                        <p><i class="ph-fill ph-link"></i> <a href="#" data-profile-modal-open="linkedin" data-profile-linkedin>Add LinkedIn Profile URL</a></p>
+                        <p><i class="ph-fill ph-globe"></i> <span>alumni.cuchd.in/profile/9503155</span></p>
+                        <p><i class="ph-fill ph-map-pin"></i> <a href="#" data-profile-modal-open="address" data-profile-address>Add Address</a></p>
+                    </div>
+                </section>
+
+                <section class="profile-panel profile-membership">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-crown"></i> Membership</h2>
+                    </div>
+                    <p data-membership-copy>You have currently not subscribed to any membership.</p>
+                    <a href="#" data-profile-modal-open="membership">Become a Member</a>
+                </section>
+
+                <section class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-identification-card"></i> Basic Information</h2>
+                        <a href="#" data-profile-modal-open="basic">Edit</a>
+                    </div>
+                    <div class="profile-info-list">
+                        <p><i class="ph-fill ph-calendar-blank"></i> <span data-profile-birth-date>Jul 12, 1998</span></p>
+                        <p><i class="ph-fill ph-map-pin"></i> <a href="#" data-profile-modal-open="location" data-profile-location>Add Your Location</a></p>
+                    </div>
+                </section>
+            </aside>
+
+            <section class="profile-main">
+                <article class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-users-three"></i> CUAA Related Experience</h2>
+                        <a href="role-details.html">Edit</a>
+                    </div>
+                    <div class="cuaa-experience">
+                        <span aria-hidden="true"><i class="ph-fill ph-buildings"></i></span>
+                        <div>
+                            <h3 data-profile-role>Alumni</h3>
+                            <p data-profile-institute-main>UNIVERSITY INSTITUTE OF ENGINEERING (UIE)</p>
+                            <p data-profile-uid>16BAB</p>
+                            <p data-profile-program-main>Master of Engineering - Civil Engineering</p>
+                            <p><span data-profile-years>2018 - 2022</span></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-briefcase"></i> Work Experience</h2>
+                        <a href="#" data-profile-modal-open="work">+ Add Work</a>
+                    </div>
+                    <div class="empty-dashed" data-profile-output="work">
+                        <i class="ph-bold ph-plus-circle"></i>
+                        <span>Share your work history to enhance your networking potential.</span>
+                    </div>
+                </article>
+
+                <article class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-graduation-cap"></i> Education</h2>
+                        <a href="#" data-profile-modal-open="education">+ Add Education</a>
+                    </div>
+                    <div class="empty-dashed" data-profile-output="education">
+                        <i class="ph-bold ph-plus-circle"></i>
+                        <span>Update your qualifications and level up as an expert.</span>
+                    </div>
+                </article>
+
+                <article class="profile-panel">
+                    <div class="profile-panel-head">
+                        <h2><i class="ph-fill ph-clipboard-text"></i> Summary</h2>
+                        <a href="#" data-profile-modal-open="summary">+ Add</a>
+                    </div>
+                    <div class="empty-dashed" data-profile-output="summary">
+                        <i class="ph-bold ph-plus-circle"></i>
+                        <span>Use summary to share what you do, your achievements or the opportunities you're looking for.</span>
+                    </div>
+                </article>
+
+                <article class="profile-panel no-updates">
+                    <i class="ph ph-tray"></i>
+                    <p>No more updates to display!</p>
+                </article>
+            </section>
+        </div>
+
+        <a class="help-float" href="#" data-profile-modal-open="help">
+            <i class="ph-bold ph-question"></i>
+            Need Help?
+        </a>
+
+        <div class="profile-modal-backdrop" data-profile-modal hidden>
+            <section class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+                <div class="profile-modal-head">
+                    <h2 id="profile-modal-title" data-profile-modal-title>Add Details</h2>
+                    <button type="button" aria-label="Close modal" data-profile-modal-close>
+                        <i class="ph-bold ph-x"></i>
+                    </button>
+                </div>
+
+                <form class="profile-modal-form" data-profile-modal-form>
+                    <div class="profile-modal-fields" data-profile-modal-fields></div>
+                    <p class="form-message" data-profile-modal-message></p>
+                    <div class="profile-modal-actions">
+                        <button type="button" data-profile-modal-close>Cancel</button>
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="../lopgoooooo.png" alt="CU Alumni Association">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <p>Powered By <strong>AlmaShines</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>
