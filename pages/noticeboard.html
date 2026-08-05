@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticeboard | Alumni Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="dashboard-route">
+    <div class="page-loader" data-page-loader>
+        <div class="loader-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+        </div>
+        <p>Chandigarh University Alumni Association</p>
+    </div>
+
+    <header class="dashboard-topbar">
+        <a href="noticeboard.html" class="dashboard-logo">
+            <img src="../lopgoooooo.png" alt="CU Alumni Association">
+        </a>
+
+        <label class="dashboard-search">
+            <i class="ph ph-magnifying-glass"></i>
+            <input type="search" placeholder="Search for people, posts, events...">
+        </label>
+
+        <div class="dashboard-user" data-dashboard-user-menu>
+            <button type="button" class="notification-btn" aria-label="Notifications">
+                <i class="ph ph-bell"></i>
+                <span>3</span>
+            </button>
+            <button type="button" class="dashboard-user-trigger" data-dashboard-user-trigger aria-label="Open profile menu" aria-haspopup="true" aria-expanded="false">
+                <span class="dashboard-avatar" data-dashboard-avatar>K</span>
+                <strong data-dashboard-name>kumarverma</strong>
+                <i class="ph ph-caret-down"></i>
+            </button>
+            <div class="dashboard-user-dropdown" data-dashboard-user-dropdown>
+                <div class="dashboard-user-dropdown-head">
+                    <span class="dashboard-avatar" data-dashboard-avatar>K</span>
+                    <div>
+                        <strong data-dashboard-name>kumarverma</strong>
+                        <small data-dashboard-provider>Alumni</small>
+                    </div>
+                </div>
+                <a href="noticeboard.html"><i class="ph-fill ph-house"></i> Noticeboard</a>
+                <a href="profile.html"><i class="ph-fill ph-user"></i> My Profile</a>
+                <a href="role-details.html"><i class="ph-fill ph-bank"></i> Role Details</a>
+                <button type="button" data-dashboard-logout><i class="ph-bold ph-sign-out"></i> Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-page" data-dashboard-page>
+        <div class="dashboard-grid">
+            <aside class="dashboard-left">
+                <article class="dash-card dash-profile-card">
+                    <div class="dash-profile-head">
+                        <span class="dash-profile-avatar" data-profile-photo>k</span>
+                        <button type="button" aria-label="Edit photo">
+                            <i class="ph-bold ph-camera"></i>
+                        </button>
+                    </div>
+                    <h1><span data-profile-name>kumarverma</span> <i class="ph-fill ph-pencil-simple"></i></h1>
+                    <p>Class of <span data-profile-class>2022</span></p>
+                    <hr class="profile-divider">
+                    <p data-profile-program>Master of Engineering - Civil Engineering -<br>(Construction Technology & Management (CTM))</p>
+                    <p data-profile-institute>UNIVERSITY INSTITUTE OF ENGINEERING (UIE)</p>
+
+                    <div class="unauthenticated-badge">
+                        <i class="ph-bold ph-shield-warning"></i> Unauthenticated User
+                    </div>
+                </article>
+
+                <section class="dash-card link-panel">
+                    <h2>Quick Links</h2>
+                    <div class="quick-links-grid">
+                        <a href="#"><i class="ph-fill ph-note-pencil"></i> Post</a>
+                        <a href="#"><i class="ph-fill ph-graduation-cap"></i> Mentorship</a>
+                        <a href="#"><i class="ph-fill ph-calendar"></i> Events</a>
+                        <a href="#"><i class="ph-fill ph-briefcase"></i> Jobs & Internships</a>
+                        <a href="#"><i class="ph-fill ph-hand-heart"></i> Fund Raising</a>
+                    </div>
+                </section>
+
+                <section class="dash-card invite-card">
+                    <h2>Invite your connections</h2>
+                    <p>to join the community</p>
+                    <div>
+                        <a class="facebook" href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a class="whatsapp" href="#" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                        <a class="linkedin" href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a class="x" href="#" aria-label="X"><i class="ph-bold ph-x"></i></a>
+                        <a class="telegram" href="#" aria-label="Telegram"><i class="ph-fill ph-telegram-logo"></i></a>
+                        <a class="instagram" href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a class="copy" href="#" aria-label="Copy link"><i class="ph ph-link"></i></a>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="dashboard-main-content">
+                <section class="dashboard-strip">
+                    <article class="dash-card feature-card campaign-card">
+                        <span class="feature-icon campaign"><i class="ph-fill ph-megaphone"></i></span>
+                        <div>
+                            <h2>Friendship, Scrapbook, Letters, Laughter & Lifelong Bonds</h2>
+                            <p>Ends on 13 Aug 2026</p>
+                        </div>
+                        <a href="#" class="btn-outline">View campaign</a>
+                    </article>
+
+                    <article class="dash-card feature-card">
+                        <span class="feature-icon green"><i class="ph-fill ph-briefcase"></i></span>
+                        <div>
+                            <h2>Are you hiring?</h2>
+                            <p>Post a job here and hire from our curated pool of qualified candidates</p>
+                        </div>
+                        <a href="#" class="btn-outline">Post a job</a>
+                    </article>
+
+                    <article class="dash-card mini-stat-card">
+                        <span class="feature-icon blue"><i class="ph-fill ph-identification-card"></i></span>
+                        <div>
+                            <h2>6 new mentors are waiting to guide you</h2>
+                            <p>Browse 82 mentors and get the guidance you need</p>
+                        </div>
+                        <a href="#" class="btn-outline">See mentors</a>
+                    </article>
+
+                    <article class="dash-card mini-stat-card">
+                        <span class="feature-icon orange"><i class="ph-fill ph-article"></i></span>
+                        <div>
+                            <h2>26 Post posts that you may have missed!</h2>
+                            <p>Friends Forever, Friends Forever, Friends Forever, Friends Forever.</p>
+                        </div>
+                        <a href="#" class="btn-outline">View posts</a>
+                    </article>
+
+                    <article class="dash-card mini-stat-card">
+                        <span class="feature-icon magenta"><i class="ph-fill ph-image-square"></i></span>
+                        <div>
+                            <h2>31 new moments added to the Gallery</h2>
+                            <p>Newly captured and shared by people from your community</p>
+                        </div>
+                        <a href="#" class="btn-outline">View photos</a>
+                    </article>
+
+                    <article class="dash-card mini-stat-card birthday-card">
+                        <span class="feature-icon teal"><i class="ph-fill ph-cake"></i></span>
+                        <div>
+                            <div class="birthday-people" aria-hidden="true">
+                                <img src="../assets/alumni_professional_1785697654197.png" alt="">
+                                <img src="../assets/alumni_graduate_1785697642912.png" alt="">
+                                <img src="../assets/alumni_event_1785697676970.png" alt="">
+                                <span>+ 51 others</span>
+                            </div>
+                            <h2>56 people have their birthdays today!</h2>
+                            <p>Make their day brighter by sending a wish!</p>
+                        </div>
+                        <a href="#" class="btn-outline"><i class="ph-bold ph-gift"></i> Send wishes</a>
+                    </article>
+                </section>
+
+                <div class="dashboard-feed-layout">
+                    <section class="dashboard-feed">
+                        <article class="dash-card composer-card">
+                            <span class="dashboard-avatar" data-dashboard-avatar>k</span>
+                            <button type="button">What's on your mind, kumarverma?</button>
+                            <div>
+                                <a href="#"><i class="ph-bold ph-image-square photo"></i> Photo</a>
+                                <a href="#"><i class="ph-bold ph-video-camera video"></i> Video</a>
+                                <a href="#"><i class="ph-bold ph-calendar event"></i> Event</a>
+                                <a href="#"><i class="ph-bold ph-chart-bar poll"></i> Poll</a>
+                            </div>
+                        </article>
+
+                        <article class="dash-card event-feature-post">
+                            <img src="../assets/optimized/IMG_0400.jpg" alt="Reconnect event group">
+                            <div class="event-details">
+                                <div class="event-title-row">
+                                    <h2>RECONNECT EVENT GSFA</h2>
+                                    <div class="event-attendees">
+                                        <img src="../assets/optimized/IMG_0001.jpg" alt="">
+                                        <img src="../assets/optimized/IMG_0004.jpg" alt="">
+                                        <img src="../assets/optimized/IMG_0006.jpg" alt="">
+                                        <img src="../assets/optimized/IMG_0176.jpg" alt="">
+                                        <span>+43</span>
+                                    </div>
+                                    <button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button>
+                                </div>
+                                <div class="event-meta-row">
+                                    <p><i class="ph-bold ph-calendar-blank"></i> Aug 01, 2026</p>
+                                    <p><i class="ph-bold ph-map-pin"></i> D1 SEMINAR HALL , Kharar</p>
+                                </div>
+                                <div class="event-actions-row">
+                                    <span class="past-event-badge">Past Event</span>
+                                    <button type="button" class="btn-share-event"><i class="ph-bold ph-share-network"></i> Share</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="dash-card feed-post">
+                            <div class="post-author">
+                                <img src="../assets/alumni_professional_1785697654197.png" alt="Priyanka">
+                                <div>
+                                    <h2>Priyanka</h2>
+                                    <p>Few moments ago</p>
+                                </div>
+                                <button type="button" class="author-more-btn" aria-label="More"><i class="ph-bold ph-dots-three"></i></button>
+                            </div>
+                            <h3>GSFA RECONNECT EVENT 1st AUGUST 2026</h3>
+                            <div class="post-gallery">
+                                <img src="../assets/optimized/IMG_0400.jpg" alt="Reconnect group">
+                                <img src="../assets/optimized/IMG_0401.jpg" alt="Reconnect team">
+                                <img src="../assets/optimized/IMG_0393.jpg" alt="Reconnect audience">
+                                <div>
+                                    <img src="../assets/optimized/IMG_0289.jpg" alt="More reconnect photos">
+                                    <span>+5</span>
+                                </div>
+                            </div>
+                            <div class="post-actions border-top">
+                                <div class="action-buttons-left">
+                                    <button type="button"><i class="ph-bold ph-thumbs-up"></i></button>
+                                    <span class="count">12</span>
+                                    <button type="button"><i class="ph-bold ph-chat-circle"></i></button>
+                                    <span class="count">3</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/DSC_4154.jpg" alt="Friends memory">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 03, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Friends Forever</h3>
+                                <p>Stanley Joshua Mbongole Muntanga Name of your closest friend/s Dzyqiel Richen Lama, Tasila Sakala, Lukundo Simwanza, Bonnie. The fondest memory that you have of your friend/s and would like to share here Room and canteen conversations If you could relive one day from your college life together, which day would it be and why? Diwali celebrations with friends will always stay close to my heart.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0401.jpg" alt="Campus memory">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 03, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Friends Forever</h3>
+                                <p>Kusha Name of your closest friend/s Prachi Sharma (aka Jhootha Sher) The fondest memory that you have of your friend/s and would like to share here It's impossible to choose just one memory because my entire LL.M. journey is filled with moments with Prachi. She made every difficult day easier and every happy day even brighter.</p>
+                            </div>
+                            <p class="story-liked"><strong>1 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0289.jpg" alt="Batchmates">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 03, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Friends Forever</h3>
+                                <p>Bhanu Sunil Khajuria Name of your closest friend/s Shriya Sharma The fondest memory that you have of your friend/s and would like to share here Connected more when realized we were from the same city. Thank you for making my CU life worth it. All the moments spent together are the fondest memories I will always carry.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0400.jpg" alt="Reconnect group">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 04, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Canteen Conversations</h3>
+                                <p>Every break turned into a long discussion about placements, trips, exams, and plans that somehow always changed by evening. The canteen table was our real meeting point where every problem had a solution and every small win became a reason to celebrate together.</p>
+                            </div>
+                            <p class="story-liked"><strong>4 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/DSC_4181.jpg" alt="Classroom">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 05, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Classroom Stories</h3>
+                                <p>Same classroom, same last-minute notes, same laughter before every viva. Some college days still feel very close because of the friends who made every lecture lighter, every project manageable, and every ordinary day worth remembering with gratitude.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0393.jpg" alt="Auditorium event">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 06, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Auditorium Day</h3>
+                                <p>One event, many rehearsals, and more memories backstage than on stage. Everyone still remembers the practice sessions, the nervous smiles, the missed steps, and the loud cheering that made the auditorium day unforgettable for all of us.</p>
+                            </div>
+                            <p class="story-liked"><strong>8 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/DSC_4133.jpg" alt="Campus group">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 07, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Hostel Nights</h3>
+                                <p>Late night assignments, shared snacks, and loud corridors. Hostel memories always come back with a smile because those small conversations after lights out became some of the closest friendships we carried from campus into life.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/DSC_4136.jpg" alt="Campus life">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 08, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Campus Walks</h3>
+                                <p>Evening walks after class had their own charm. Some paths became meeting points, some became memories, and some became the place where we talked about dreams, worries, placements, family, and everything in between without hesitation.</p>
+                            </div>
+                            <p class="story-liked"><strong>12 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0004.jpg" alt="Friends reunion">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 09, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Reunion Smiles</h3>
+                                <p>Meeting batchmates again felt like no time had passed. Same jokes, same warmth, and many new stories made the reunion feel like we were back on campus, standing in the same corners with the same people we trusted.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0006.jpg" alt="Farewell">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 10, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Farewell Notes</h3>
+                                <p>Old notes, quick signatures, and promises to stay in touch. The farewell day still feels fresh because everyone tried to smile while knowing that the routine we loved was changing forever after that evening ended.</p>
+                            </div>
+                            <p class="story-liked"><strong>15 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/IMG_0176.jpg" alt="Batch day">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 11, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Batch Photo Chaos</h3>
+                                <p>Everyone was late, nobody stood still, and somehow the final photo became the most loved memory. It was noisy, funny, completely unplanned, and exactly the kind of chaos that made our batch special forever.</p>
+                            </div>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+
+                        <article class="dash-card story-post">
+                            <img src="../assets/optimized/DSC_4134.jpg" alt="Friends group">
+                            <div class="story-copy">
+                                <div class="story-meta"><span><i class="ph-bold ph-calendar-blank"></i> Aug 12, 2026</span><button type="button" aria-label="Share"><i class="ph-bold ph-share-network"></i></button><button type="button" aria-label="More"><i class="ph-bold ph-dots-three-vertical"></i></button></div>
+                                <h3>Last Lecture</h3>
+                                <p>The final lecture ended quietly, but the memories stayed loud. Some goodbyes are really just beginnings, and that day reminded us how much a classroom, a teacher, and a group of friends can become home.</p>
+                            </div>
+                            <p class="story-liked"><strong>20 people</strong> liked this post</p>
+                            <div class="story-actions"><button type="button"><i class="ph-bold ph-thumbs-up"></i> Like</button><button type="button"><i class="ph-bold ph-chat-circle"></i> Comment</button></div>
+                            <label class="story-comment"><span class="dashboard-avatar">k</span><input type="text" placeholder="Write a comment..."><i class="ph-bold ph-smiley"></i></label>
+                        </article>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-modal-backdrop" data-dashboard-modal hidden>
+            <section class="profile-modal dashboard-modal" role="dialog" aria-modal="true" aria-labelledby="dashboard-modal-title">
+                <div class="profile-modal-head">
+                    <h2 id="dashboard-modal-title" data-dashboard-modal-title>Add Details</h2>
+                    <button type="button" aria-label="Close modal" data-dashboard-modal-close>
+                        <i class="ph-bold ph-x"></i>
+                    </button>
+                </div>
+
+                <form class="profile-modal-form" data-dashboard-modal-form>
+                    <div class="profile-modal-fields" data-dashboard-modal-fields></div>
+                    <p class="form-message" data-dashboard-modal-message></p>
+                    <div class="profile-modal-actions">
+                        <button type="button" data-dashboard-modal-close>Cancel</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

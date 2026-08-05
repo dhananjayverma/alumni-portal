@@ -29,7 +29,7 @@ function initProfileEntry() {
                         <small>${escapeHtml(email || provider || 'Alumni Profile')}</small>
                     </div>
                 </div>
-                <a href="${pageHref('dashboard.html')}"><i class="ph-fill ph-house"></i> Dashboard</a>
+                <a href="${pageHref('noticeboard.html')}"><i class="ph-fill ph-house"></i> Noticeboard</a>
                 <a href="${pageHref('profile.html')}"><i class="ph-fill ph-user"></i> My Profile</a>
                 <a href="${pageHref('role-details.html')}"><i class="ph-fill ph-bank"></i> Role Details</a>
                 <button type="button" data-profile-logout><i class="ph-bold ph-sign-out"></i> Logout</button>

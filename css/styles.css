@@ -145,6 +145,7 @@ h3 {
     font-size: 0.82rem;
     font-weight: 800;
     line-height: 1;
+    white-space: nowrap;
     text-transform: none;
     cursor: pointer;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
@@ -178,6 +179,7 @@ h3 {
 
 .btn-small {
     min-height: 44px;
+    min-width: 190px;
     padding: 0.72rem 1.25rem;
     font-size: 0.86rem;
     text-transform: uppercase;
@@ -193,7 +195,7 @@ h3 {
 .header-inner {
     min-height: 82px;
     display: grid;
-    grid-template-columns: 230px 1fr 160px;
+    grid-template-columns: 230px 1fr 220px;
     align-items: center;
     gap: 1rem;
 }
@@ -237,6 +239,7 @@ h3 {
 
 .header-inner>.btn {
     justify-self: end;
+    width: max-content;
 }
 
 .profile-menu {
@@ -2311,7 +2314,7 @@ h3 {
     }
 
     .header-inner {
-        grid-template-columns: 210px 1fr 150px;
+        grid-template-columns: 210px 1fr 220px;
     }
 
     .brand,
@@ -2369,7 +2372,7 @@ h3 {
 
 @media (max-width: 1080px) {
     .header-inner {
-        grid-template-columns: 190px 1fr 140px;
+        grid-template-columns: 190px 1fr 220px;
     }
 
     .brand,

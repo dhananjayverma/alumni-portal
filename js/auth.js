@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.setTimeout(() => {
                 window.location.href = selectedRole === 'Alumni (Past Student)'
                     ? pageHref('about-step.html')
-                    : pageHref('dashboard.html');
+                    : pageHref('noticeboard.html');
             }, 450);
         });
     }
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.setItem('cuCurrentStatus', currentStatus);
             showMessage('Saved. Continuing...');
             window.setTimeout(() => {
-                window.location.href = pageHref('dashboard.html');
+                window.location.href = pageHref('noticeboard.html');
             }, 450);
         });
     }
@@ -219,7 +219,7 @@ function initProfileEntry() {
                         <small>${escapeHtml(email || provider || 'Alumni Profile')}</small>
                     </div>
                 </div>
-                <a href="${pageHref('dashboard.html')}"><i class="ph-fill ph-house"></i> Dashboard</a>
+                <a href="${pageHref('noticeboard.html')}"><i class="ph-fill ph-house"></i> Noticeboard</a>
                 <a href="${pageHref('profile.html')}"><i class="ph-fill ph-user"></i> My Profile</a>
                 <a href="${pageHref('role-details.html')}"><i class="ph-fill ph-bank"></i> Role Details</a>
                 <button type="button" data-profile-logout><i class="ph-bold ph-sign-out"></i> Logout</button>
@@ -304,16 +304,50 @@ function initDashboardPage() {
     const profileName = sessionStorage.getItem('cuProfileName') || getProfileName(email, provider);
     const displayInstitute = institute || 'UNIVERSITY INSTITUTE OF ENGINEERING (UIE)';
     const displayProgram = programName || 'Master of Engineering - Civil Engineering';
+    const displayProvider = provider || email || 'Alumni';
     const initial = profileName.trim().charAt(0).toUpperCase() || 'U';
 
     setText('[data-profile-name]', profileName);
     setText('[data-dashboard-name]', profileName);
+    setText('[data-dashboard-provider]', displayProvider);
     setText('[data-profile-institute]', displayInstitute.toUpperCase());
     setText('[data-profile-program]', displayProgram);
     setText('[data-profile-class]', graduationYear || '2022');
     setText('[data-profile-photo]', initial);
     setText('[data-dashboard-avatar]', initial);
+    initDashboardUserMenu();
     initDashboardModals(dashboardPage);
+}
+
+function initDashboardUserMenu() {
+    const menu = document.querySelector('[data-dashboard-user-menu]');
+    const trigger = document.querySelector('[data-dashboard-user-trigger]');
+    const logout = document.querySelector('[data-dashboard-logout]');
+
+    if (!menu || !trigger) return;
+
+    trigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = menu.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            menu.classList.remove('is-open');
+            trigger.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    logout?.addEventListener('click', () => {
+        clearProfileSession();
+        window.location.href = rootHref('auth.html');
+    });
 }
 
 function initDashboardModals(dashboardPage) {
